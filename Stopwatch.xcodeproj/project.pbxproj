@@ -16,6 +16,7 @@
 		F2D5B2652D3CCBBD00E31A8E /* StopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D5B2642D3CCBBD00E31A8E /* StopwatchTests.swift */; };
 		F2D5B26F2D3CCBBD00E31A8E /* StopwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D5B26E2D3CCBBD00E31A8E /* StopwatchUITests.swift */; };
 		F2D5B2712D3CCBBD00E31A8E /* StopwatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D5B2702D3CCBBD00E31A8E /* StopwatchUITestsLaunchTests.swift */; };
+		F2D5B27E2D3E62C400E31A8E /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D5B27D2D3E62C400E31A8E /* Stopwatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F2D5B26A2D3CCBBD00E31A8E /* StopwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D5B26E2D3CCBBD00E31A8E /* StopwatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchUITests.swift; sourceTree = "<group>"; };
 		F2D5B2702D3CCBBD00E31A8E /* StopwatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F2D5B27D2D3E62C400E31A8E /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				F2D5B24D2D3CCBB600E31A8E /* AppDelegate.swift */,
 				F2D5B24F2D3CCBB600E31A8E /* SceneDelegate.swift */,
 				F2D5B2512D3CCBB600E31A8E /* ViewController.swift */,
+				F2D5B27D2D3E62C400E31A8E /* Stopwatch.swift */,
 				F2D5B2532D3CCBB600E31A8E /* Main.storyboard */,
 				F2D5B2562D3CCBBC00E31A8E /* Assets.xcassets */,
 				F2D5B2582D3CCBBC00E31A8E /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				F2D5B2522D3CCBB600E31A8E /* ViewController.swift in Sources */,
 				F2D5B24E2D3CCBB600E31A8E /* AppDelegate.swift in Sources */,
 				F2D5B2502D3CCBB600E31A8E /* SceneDelegate.swift in Sources */,
+				F2D5B27E2D3E62C400E31A8E /* Stopwatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
