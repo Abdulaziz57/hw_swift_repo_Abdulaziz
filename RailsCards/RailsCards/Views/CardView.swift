@@ -15,16 +15,20 @@ struct CardView: View {
             ZStack {
                 
                 NavigationLink(destination: DefinitionView(viewController: viewController)) {
-                    Text("Show Definition")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.blue)
-                        .cornerRadius(10)
+                    if let flashcard = viewController.flashcard{
+                        Text(flashcard.command)
+                    } else {
+                        Text("Loading flashcards...")
+                    }
                 }
             }
+            .frame(width: 350, height: 200)
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.gray)
+                )
             .onAppear {
-                viewController.updateFlashcard()
+                self.viewController.updateFlashcard()
             }
         }
     }
