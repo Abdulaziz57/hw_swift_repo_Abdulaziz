@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F290F78F2DB4CB100064DC1A /* TrippyLiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F78E2DB4CB100064DC1A /* TrippyLiteApp.swift */; };
+		F290F7912DB4CB100064DC1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7902DB4CB100064DC1A /* ContentView.swift */; };
+		F290F7932DB4CB130064DC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F290F7922DB4CB130064DC1A /* Assets.xcassets */; };
+		F290F7962DB4CB130064DC1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F290F7952DB4CB130064DC1A /* Preview Assets.xcassets */; };
+		F290F7A02DB4CB140064DC1A /* TrippyLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F79F2DB4CB140064DC1A /* TrippyLiteTests.swift */; };
+		F290F7AA2DB4CB140064DC1A /* TrippyLiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7A92DB4CB140064DC1A /* TrippyLiteUITests.swift */; };
+		F290F7AC2DB4CB140064DC1A /* TrippyLiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7AB2DB4CB140064DC1A /* TrippyLiteUITestsLaunchTests.swift */; };
+		F290F7BD2DB4CDEB0064DC1A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F290F7BC2DB4CDEB0064DC1A /* FirebaseAuth */; };
+		F290F7BF2DB4CDEB0064DC1A /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = F290F7BE2DB4CDEB0064DC1A /* FirebaseCore */; };
+		F290F7C12DB4CDEB0064DC1A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F290F7C02DB4CDEB0064DC1A /* FirebaseFirestore */; };
+		F290F7C32DB4CDEB0064DC1A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F290F7C22DB4CDEB0064DC1A /* FirebaseStorage */; };
+		F290F7C52DB4CE1D0064DC1A /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = F290F7C42DB4CE1D0064DC1A /* GoogleService-Info-2.plist */; };
+		F290F7C72DB4CE5F0064DC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7C62DB4CE5F0064DC1A /* AppDelegate.swift */; };
+		F290F7C92DB4CEFD0064DC1A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7C82DB4CEFD0064DC1A /* User.swift */; };
+		F290F7CB2DB4CF330064DC1A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7CA2DB4CF330064DC1A /* Post.swift */; };
+		F290F7CD2DB4CF510064DC1A /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7CC2DB4CF510064DC1A /* Comment.swift */; };
+		F290F7CF2DB4DB320064DC1A /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7CE2DB4DB320064DC1A /* Chat.swift */; };
+		F290F7D12DB4DB4E0064DC1A /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7D02DB4DB4E0064DC1A /* ChatMessage.swift */; };
+		F290F7D32DB4DB970064DC1A /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7D22DB4DB970064DC1A /* FirebaseService.swift */; };
+		F290F7D52DB4DD1A0064DC1A /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7D42DB4DD1A0064DC1A /* FeedViewModel.swift */; };
+		F290F7D72DB4DD280064DC1A /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7D62DB4DD280064DC1A /* FeedView.swift */; };
+		F290F7D92DB4DD570064DC1A /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7D82DB4DD560064DC1A /* PostViewModel.swift */; };
+		F290F7DB2DB4DD680064DC1A /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7DA2DB4DD680064DC1A /* PostView.swift */; };
+		F290F7DD2DB4DD970064DC1A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7DC2DB4DD970064DC1A /* ProfileViewModel.swift */; };
+		F290F7DF2DB4DDD30064DC1A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7DE2DB4DDD30064DC1A /* ProfileView.swift */; };
+		F290F7E12DB4DDFB0064DC1A /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7E02DB4DDFB0064DC1A /* ChatViewModel.swift */; };
+		F290F7E32DB4DE0C0064DC1A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7E22DB4DE0C0064DC1A /* ChatView.swift */; };
+		F290F7E52DB4DE370064DC1A /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7E42DB4DE370064DC1A /* CommentsViewModel.swift */; };
+		F290F7E72DB4DE4C0064DC1A /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7E62DB4DE4C0064DC1A /* CommentsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F290F79C2DB4CB140064DC1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F290F7832DB4CB100064DC1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F290F78A2DB4CB100064DC1A;
+			remoteInfo = TrippyLite;
+		};
+		F290F7A62DB4CB140064DC1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F290F7832DB4CB100064DC1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F290F78A2DB4CB100064DC1A;
+			remoteInfo = TrippyLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F290F78B2DB4CB100064DC1A /* TrippyLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrippyLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F290F78E2DB4CB100064DC1A /* TrippyLiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrippyLiteApp.swift; sourceTree = "<group>"; };
+		F290F7902DB4CB100064DC1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F290F7922DB4CB130064DC1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F290F7952DB4CB130064DC1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F290F79B2DB4CB140064DC1A /* TrippyLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrippyLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F290F79F2DB4CB140064DC1A /* TrippyLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrippyLiteTests.swift; sourceTree = "<group>"; };
+		F290F7A52DB4CB140064DC1A /* TrippyLiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrippyLiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F290F7A92DB4CB140064DC1A /* TrippyLiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrippyLiteUITests.swift; sourceTree = "<group>"; };
+		F290F7AB2DB4CB140064DC1A /* TrippyLiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrippyLiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F290F7C42DB4CE1D0064DC1A /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		F290F7C62DB4CE5F0064DC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F290F7C82DB4CEFD0064DC1A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F290F7CA2DB4CF330064DC1A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F290F7CC2DB4CF510064DC1A /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		F290F7CE2DB4DB320064DC1A /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		F290F7D02DB4DB4E0064DC1A /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		F290F7D22DB4DB970064DC1A /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		F290F7D42DB4DD1A0064DC1A /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		F290F7D62DB4DD280064DC1A /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		F290F7D82DB4DD560064DC1A /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		F290F7DA2DB4DD680064DC1A /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		F290F7DC2DB4DD970064DC1A /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		F290F7DE2DB4DDD30064DC1A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F290F7E02DB4DDFB0064DC1A /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		F290F7E22DB4DE0C0064DC1A /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		F290F7E42DB4DE370064DC1A /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
+		F290F7E62DB4DE4C0064DC1A /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F290F7882DB4CB100064DC1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F290F7BF2DB4CDEB0064DC1A /* FirebaseCore in Frameworks */,
+				F290F7C32DB4CDEB0064DC1A /* FirebaseStorage in Frameworks */,
+				F290F7BD2DB4CDEB0064DC1A /* FirebaseAuth in Frameworks */,
+				F290F7C12DB4CDEB0064DC1A /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F290F7982DB4CB140064DC1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F290F7A22DB4CB140064DC1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F290F7822DB4CB100064DC1A = {
+			isa = PBXGroup;
+			children = (
+				F290F78D2DB4CB100064DC1A /* TrippyLite */,
+				F290F79E2DB4CB140064DC1A /* TrippyLiteTests */,
+				F290F7A82DB4CB140064DC1A /* TrippyLiteUITests */,
+				F290F78C2DB4CB100064DC1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F290F78C2DB4CB100064DC1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F290F78B2DB4CB100064DC1A /* TrippyLite.app */,
+				F290F79B2DB4CB140064DC1A /* TrippyLiteTests.xctest */,
+				F290F7A52DB4CB140064DC1A /* TrippyLiteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F290F78D2DB4CB100064DC1A /* TrippyLite */ = {
+			isa = PBXGroup;
+			children = (
+				F290F7C42DB4CE1D0064DC1A /* GoogleService-Info-2.plist */,
+				F290F7BA2DB4CCEA0064DC1A /* View */,
+				F290F7B92DB4CCDE0064DC1A /* ViewModel */,
+				F290F7B82DB4CCC70064DC1A /* Model */,
+				F290F78E2DB4CB100064DC1A /* TrippyLiteApp.swift */,
+				F290F7902DB4CB100064DC1A /* ContentView.swift */,
+				F290F7922DB4CB130064DC1A /* Assets.xcassets */,
+				F290F7942DB4CB130064DC1A /* Preview Content */,
+				F290F7C62DB4CE5F0064DC1A /* AppDelegate.swift */,
+			);
+			path = TrippyLite;
+			sourceTree = "<group>";
+		};
+		F290F7942DB4CB130064DC1A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F290F7952DB4CB130064DC1A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F290F79E2DB4CB140064DC1A /* TrippyLiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				F290F79F2DB4CB140064DC1A /* TrippyLiteTests.swift */,
+			);
+			path = TrippyLiteTests;
+			sourceTree = "<group>";
+		};
+		F290F7A82DB4CB140064DC1A /* TrippyLiteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F290F7A92DB4CB140064DC1A /* TrippyLiteUITests.swift */,
+				F290F7AB2DB4CB140064DC1A /* TrippyLiteUITestsLaunchTests.swift */,
+			);
+			path = TrippyLiteUITests;
+			sourceTree = "<group>";
+		};
+		F290F7B82DB4CCC70064DC1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F290F7C82DB4CEFD0064DC1A /* User.swift */,
+				F290F7CA2DB4CF330064DC1A /* Post.swift */,
+				F290F7CC2DB4CF510064DC1A /* Comment.swift */,
+				F290F7CE2DB4DB320064DC1A /* Chat.swift */,
+				F290F7D02DB4DB4E0064DC1A /* ChatMessage.swift */,
+				F290F7D22DB4DB970064DC1A /* FirebaseService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F290F7B92DB4CCDE0064DC1A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F290F7D42DB4DD1A0064DC1A /* FeedViewModel.swift */,
+				F290F7D82DB4DD560064DC1A /* PostViewModel.swift */,
+				F290F7DC2DB4DD970064DC1A /* ProfileViewModel.swift */,
+				F290F7E02DB4DDFB0064DC1A /* ChatViewModel.swift */,
+				F290F7E42DB4DE370064DC1A /* CommentsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F290F7BA2DB4CCEA0064DC1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F290F7D62DB4DD280064DC1A /* FeedView.swift */,
+				F290F7DA2DB4DD680064DC1A /* PostView.swift */,
+				F290F7DE2DB4DDD30064DC1A /* ProfileView.swift */,
+				F290F7E22DB4DE0C0064DC1A /* ChatView.swift */,
+				F290F7E62DB4DE4C0064DC1A /* CommentsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F290F78A2DB4CB100064DC1A /* TrippyLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F290F7AF2DB4CB140064DC1A /* Build configuration list for PBXNativeTarget "TrippyLite" */;
+			buildPhases = (
+				F290F7872DB4CB100064DC1A /* Sources */,
+				F290F7882DB4CB100064DC1A /* Frameworks */,
+				F290F7892DB4CB100064DC1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrippyLite;
+			packageProductDependencies = (
+				F290F7BC2DB4CDEB0064DC1A /* FirebaseAuth */,
+				F290F7BE2DB4CDEB0064DC1A /* FirebaseCore */,
+				F290F7C02DB4CDEB0064DC1A /* FirebaseFirestore */,
+				F290F7C22DB4CDEB0064DC1A /* FirebaseStorage */,
+			);
+			productName = TrippyLite;
+			productReference = F290F78B2DB4CB100064DC1A /* TrippyLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F290F79A2DB4CB140064DC1A /* TrippyLiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F290F7B22DB4CB140064DC1A /* Build configuration list for PBXNativeTarget "TrippyLiteTests" */;
+			buildPhases = (
+				F290F7972DB4CB140064DC1A /* Sources */,
+				F290F7982DB4CB140064DC1A /* Frameworks */,
+				F290F7992DB4CB140064DC1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F290F79D2DB4CB140064DC1A /* PBXTargetDependency */,
+			);
+			name = TrippyLiteTests;
+			productName = TrippyLiteTests;
+			productReference = F290F79B2DB4CB140064DC1A /* TrippyLiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F290F7A42DB4CB140064DC1A /* TrippyLiteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F290F7B52DB4CB140064DC1A /* Build configuration list for PBXNativeTarget "TrippyLiteUITests" */;
+			buildPhases = (
+				F290F7A12DB4CB140064DC1A /* Sources */,
+				F290F7A22DB4CB140064DC1A /* Frameworks */,
+				F290F7A32DB4CB140064DC1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F290F7A72DB4CB140064DC1A /* PBXTargetDependency */,
+			);
+			name = TrippyLiteUITests;
+			productName = TrippyLiteUITests;
+			productReference = F290F7A52DB4CB140064DC1A /* TrippyLiteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F290F7832DB4CB100064DC1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F290F78A2DB4CB100064DC1A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F290F79A2DB4CB140064DC1A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F290F78A2DB4CB100064DC1A;
+					};
+					F290F7A42DB4CB140064DC1A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F290F78A2DB4CB100064DC1A;
+					};
+				};
+			};
+			buildConfigurationList = F290F7862DB4CB100064DC1A /* Build configuration list for PBXProject "TrippyLite" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F290F7822DB4CB100064DC1A;
+			packageReferences = (
+				F290F7BB2DB4CDEB0064DC1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F290F78C2DB4CB100064DC1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F290F78A2DB4CB100064DC1A /* TrippyLite */,
+				F290F79A2DB4CB140064DC1A /* TrippyLiteTests */,
+				F290F7A42DB4CB140064DC1A /* TrippyLiteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F290F7892DB4CB100064DC1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F290F7962DB4CB130064DC1A /* Preview Assets.xcassets in Resources */,
+				F290F7932DB4CB130064DC1A /* Assets.xcassets in Resources */,
+				F290F7C52DB4CE1D0064DC1A /* GoogleService-Info-2.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F290F7992DB4CB140064DC1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F290F7A32DB4CB140064DC1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F290F7872DB4CB100064DC1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F290F7E52DB4DE370064DC1A /* CommentsViewModel.swift in Sources */,
+				F290F7E72DB4DE4C0064DC1A /* CommentsView.swift in Sources */,
+				F290F7D92DB4DD570064DC1A /* PostViewModel.swift in Sources */,
+				F290F7D52DB4DD1A0064DC1A /* FeedViewModel.swift in Sources */,
+				F290F7C92DB4CEFD0064DC1A /* User.swift in Sources */,
+				F290F7D12DB4DB4E0064DC1A /* ChatMessage.swift in Sources */,
+				F290F7CD2DB4CF510064DC1A /* Comment.swift in Sources */,
+				F290F7CF2DB4DB320064DC1A /* Chat.swift in Sources */,
+				F290F7DD2DB4DD970064DC1A /* ProfileViewModel.swift in Sources */,
+				F290F7DF2DB4DDD30064DC1A /* ProfileView.swift in Sources */,
+				F290F7D32DB4DB970064DC1A /* FirebaseService.swift in Sources */,
+				F290F7D72DB4DD280064DC1A /* FeedView.swift in Sources */,
+				F290F7E12DB4DDFB0064DC1A /* ChatViewModel.swift in Sources */,
+				F290F7C72DB4CE5F0064DC1A /* AppDelegate.swift in Sources */,
+				F290F7E32DB4DE0C0064DC1A /* ChatView.swift in Sources */,
+				F290F7912DB4CB100064DC1A /* ContentView.swift in Sources */,
+				F290F78F2DB4CB100064DC1A /* TrippyLiteApp.swift in Sources */,
+				F290F7DB2DB4DD680064DC1A /* PostView.swift in Sources */,
+				F290F7CB2DB4CF330064DC1A /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F290F7972DB4CB140064DC1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F290F7A02DB4CB140064DC1A /* TrippyLiteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F290F7A12DB4CB140064DC1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F290F7AC2DB4CB140064DC1A /* TrippyLiteUITestsLaunchTests.swift in Sources */,
+				F290F7AA2DB4CB140064DC1A /* TrippyLiteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F290F79D2DB4CB140064DC1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F290F78A2DB4CB100064DC1A /* TrippyLite */;
+			targetProxy = F290F79C2DB4CB140064DC1A /* PBXContainerItemProxy */;
+		};
+		F290F7A72DB4CB140064DC1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F290F78A2DB4CB100064DC1A /* TrippyLite */;
+			targetProxy = F290F7A62DB4CB140064DC1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F290F7AD2DB4CB140064DC1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F290F7AE2DB4CB140064DC1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F290F7B02DB4CB140064DC1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrippyLite/Preview Content\"";
+				DEVELOPMENT_TEAM = KSZ22SM2R2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = a.TrippyLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F290F7B12DB4CB140064DC1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TrippyLite/Preview Content\"";
+				DEVELOPMENT_TEAM = KSZ22SM2R2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = a.TrippyLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F290F7B32DB4CB140064DC1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KSZ22SM2R2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = a.TrippyLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrippyLite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrippyLite";
+			};
+			name = Debug;
+		};
+		F290F7B42DB4CB140064DC1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KSZ22SM2R2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = a.TrippyLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrippyLite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrippyLite";
+			};
+			name = Release;
+		};
+		F290F7B62DB4CB140064DC1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KSZ22SM2R2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = a.TrippyLiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrippyLite;
+			};
+			name = Debug;
+		};
+		F290F7B72DB4CB140064DC1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KSZ22SM2R2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = a.TrippyLiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrippyLite;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F290F7862DB4CB100064DC1A /* Build configuration list for PBXProject "TrippyLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F290F7AD2DB4CB140064DC1A /* Debug */,
+				F290F7AE2DB4CB140064DC1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F290F7AF2DB4CB140064DC1A /* Build configuration list for PBXNativeTarget "TrippyLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F290F7B02DB4CB140064DC1A /* Debug */,
+				F290F7B12DB4CB140064DC1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F290F7B22DB4CB140064DC1A /* Build configuration list for PBXNativeTarget "TrippyLiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F290F7B32DB4CB140064DC1A /* Debug */,
+				F290F7B42DB4CB140064DC1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F290F7B52DB4CB140064DC1A /* Build configuration list for PBXNativeTarget "TrippyLiteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F290F7B62DB4CB140064DC1A /* Debug */,
+				F290F7B72DB4CB140064DC1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F290F7BB2DB4CDEB0064DC1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F290F7BC2DB4CDEB0064DC1A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F290F7BB2DB4CDEB0064DC1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F290F7BE2DB4CDEB0064DC1A /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F290F7BB2DB4CDEB0064DC1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		F290F7C02DB4CDEB0064DC1A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F290F7BB2DB4CDEB0064DC1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F290F7C22DB4CDEB0064DC1A /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F290F7BB2DB4CDEB0064DC1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F290F7832DB4CB100064DC1A /* Project object */;
+}
