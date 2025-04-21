@@ -18,7 +18,7 @@
 		F290F7BF2DB4CDEB0064DC1A /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = F290F7BE2DB4CDEB0064DC1A /* FirebaseCore */; };
 		F290F7C12DB4CDEB0064DC1A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F290F7C02DB4CDEB0064DC1A /* FirebaseFirestore */; };
 		F290F7C32DB4CDEB0064DC1A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F290F7C22DB4CDEB0064DC1A /* FirebaseStorage */; };
-		F290F7C52DB4CE1D0064DC1A /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = F290F7C42DB4CE1D0064DC1A /* GoogleService-Info-2.plist */; };
+		F290F7C52DB4CE1D0064DC1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F290F7C42DB4CE1D0064DC1A /* GoogleService-Info.plist */; };
 		F290F7C72DB4CE5F0064DC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7C62DB4CE5F0064DC1A /* AppDelegate.swift */; };
 		F290F7C92DB4CEFD0064DC1A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7C82DB4CEFD0064DC1A /* User.swift */; };
 		F290F7CB2DB4CF330064DC1A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F7CA2DB4CF330064DC1A /* Post.swift */; };
@@ -66,7 +66,7 @@
 		F290F7A52DB4CB140064DC1A /* TrippyLiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrippyLiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F290F7A92DB4CB140064DC1A /* TrippyLiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrippyLiteUITests.swift; sourceTree = "<group>"; };
 		F290F7AB2DB4CB140064DC1A /* TrippyLiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrippyLiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F290F7C42DB4CE1D0064DC1A /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		F290F7C42DB4CE1D0064DC1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F290F7C62DB4CE5F0064DC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F290F7C82DB4CEFD0064DC1A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F290F7CA2DB4CF330064DC1A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		F290F78D2DB4CB100064DC1A /* TrippyLite */ = {
 			isa = PBXGroup;
 			children = (
-				F290F7C42DB4CE1D0064DC1A /* GoogleService-Info-2.plist */,
+				F290F7C42DB4CE1D0064DC1A /* GoogleService-Info.plist */,
 				F290F7BA2DB4CCEA0064DC1A /* View */,
 				F290F7B92DB4CCDE0064DC1A /* ViewModel */,
 				F290F7B82DB4CCC70064DC1A /* Model */,
@@ -328,7 +328,7 @@
 			files = (
 				F290F7962DB4CB130064DC1A /* Preview Assets.xcassets in Resources */,
 				F290F7932DB4CB130064DC1A /* Assets.xcassets in Resources */,
-				F290F7C52DB4CE1D0064DC1A /* GoogleService-Info-2.plist in Resources */,
+				F290F7C52DB4CE1D0064DC1A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

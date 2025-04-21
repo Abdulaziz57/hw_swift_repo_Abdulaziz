@@ -14,7 +14,15 @@ class FirebaseService {
     static let shared = FirebaseService()
     let db = Firestore.firestore()
     private let storage = Storage.storage()
-    var currentUser: User? 
+    var currentUserID: String = "abdulazizAlMannai"
+    var currentUser: User? = User(
+        id: "abdulazizAlMannai",
+        name: "Abdulaziz Al Mannai",
+        image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iconfinder.com%2Ficons%2F403019%2Favatar_male_man_person_user_young_icon&psig=AOvVaw23VvP1AiN8oUYxKmK0M3ak&ust=1745308486416000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKjPmPXS6IwDFQAAAAAdAAAAABAE",
+        following: ["one", "two", "three"],
+        userLiked: ["one"]
+    )
+
 
 
     // Fetch users
@@ -39,12 +47,25 @@ class FirebaseService {
 
     // Fetch posts
     func fetchPosts(completion: @escaping ([Post]) -> Void) {
-        db.collection("posts").getDocuments { snapshot, error in
-            guard let docs = snapshot?.documents else { return }
-            let posts = docs.compactMap { try? $0.data(as: Post.self) }
+        db.collection("posts").addSnapshotListener { snapshot, error in
+            guard let docs = snapshot?.documents else {
+                print("⚠️ No snapshot data")
+                return
+            }
+
+            let posts: [Post] = docs.compactMap {
+                do {
+                    return try $0.data(as: Post.self)
+                } catch {
+                    print("⚠️ Error decoding post:", error)
+                    return nil
+                }
+            }
+
             completion(posts)
         }
     }
+
 
     // Like a post
     func likePost(postID: String, newLikes: Int) {

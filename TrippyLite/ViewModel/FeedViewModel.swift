@@ -22,10 +22,12 @@ class FeedViewModel: ObservableObject {
     func fetchPosts() {
         FirebaseService.shared.fetchPosts { [weak self] posts in
             DispatchQueue.main.async {
+                print("✅ Loaded \(posts.count) posts")
                 self?.posts = posts
             }
         }
     }
+
 
     func toggleLike(for post: Post) {
         let isLiked = !isPostLiked(post)

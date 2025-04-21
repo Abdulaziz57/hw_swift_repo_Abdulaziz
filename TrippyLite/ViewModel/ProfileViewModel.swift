@@ -10,6 +10,8 @@ import Foundation
 class ProfileViewModel: ObservableObject {
     @Published var username: String = ""
     @Published var userimage: String = ""
+    @Published var likedCount: Int = 0
+    @Published var followingCount: Int = 0
     @Published var isLoading = true
 
     init() {
@@ -17,13 +19,19 @@ class ProfileViewModel: ObservableObject {
     }
 
     func loadProfile() {
-        guard let user = FirebaseService.shared.currentUser else {
-            return
-        }
-        DispatchQueue.main.async {
-            self.username = user.name
-            self.userimage = user.image
-            self.isLoading = false
+        if let user = FirebaseService.shared.currentUser {
+            DispatchQueue.main.async {
+                self.username = user.name
+                self.userimage = user.image
+                self.likedCount = user.userLiked.count
+                self.followingCount = user.following.count
+                self.isLoading = false
+            }
+        } else {
+            print("⚠️ currentUser is nil")
+            isLoading = false
         }
     }
 }
+
+
